@@ -1,0 +1,33 @@
+#mybatis:
+#  type-aliases-package: com.boot.board.dto
+#
+#server:
+#  port: 8080
+#spring:
+#  mvc:
+#    view:
+#      prefix: /templates/
+#      suffix: .html
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://localhost:3307/starter?autoReconnect=true&useUnicode=true&characterEncoding=UTF8&serverTimezone=UTC&useSSL=false
+#    username: root
+#    password: eogml1159@
+#
+#  servlet:
+#    multipart:
+#      enabled: true
+#      max-file-size: 100MB
+#      max-request-size: 100MB
+#
+#  mail:
+#    host: smtp.gmail.com
+#    port: 587
+#    username:
+#    password:
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true
+#          starttls:
+#            enable: true
