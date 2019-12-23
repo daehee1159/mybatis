@@ -1,7 +1,8 @@
 package com.boot.board.service;
 
-import com.boot.board.dao.ArticleDao;
+//import com.boot.board.dao.ArticleDao;
 import com.boot.board.dto.Article;
+import com.boot.board.mapper.ArticleMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,9 +12,12 @@ import java.util.List;
 @Service
 public class ArticleServiceImpl implements ArticleService {
 
+//    @Autowired
+//    ArticleDao articleDao;
+
     @Autowired
-    ArticleDao articleDao;
-    // 이제 ArticleService는 데이터 관련해서는 모두 Dao에게 위임
+    ArticleMapper articleMapper;
+
 
     public List<Article> getList() {
         //이건 가짜 데이터임, 중간 확인용
@@ -28,7 +32,7 @@ public class ArticleServiceImpl implements ArticleService {
 //        list.add(article3);
 //
 //        return list;
-
-        return articleDao.getList();
+//
+        return articleMapper.getList();
     }
 }

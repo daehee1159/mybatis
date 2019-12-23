@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface ArticleService {
 
-    public List<Article> getList();
+    List<Article> getList();
 }

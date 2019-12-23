@@ -1,5 +1,6 @@
 package com.boot.board.controller;
 
+//import com.boot.board.dao.ArticleDao;
 import com.boot.board.dto.Article;
 import com.boot.board.service.ArticleService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,8 +31,11 @@ public class ArticleController {
 
     @Autowired
     ArticleService articleService;
+//
+//    @Autowired
+//    ArticleDao articleDao;
 
-    @RequestMapping("/article/list1")
+    @RequestMapping("/article/test")
     public String showList1(Model model) {
         List<Article> list = articleService.getList();
 
